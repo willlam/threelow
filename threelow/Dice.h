@@ -1,5 +1,5 @@
 //
-//  main.m
+//  Dice.h
 //  threelow
 //
 //  Created by William Lam on 2016-03-08.
@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Dice.h"
-#import "GameController.h"
-#import "InputCollector.h"
 
-int main(int argc, const char * argv[]) {
-	
-	
+@interface Dice : NSObject
 
-    return 0;
-}
+@property (assign, nonatomic) int diceValue;
+
+
+-(instancetype)initWithDiceValue;
+
+-(int) randomize;
+
+
+@end
